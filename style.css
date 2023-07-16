@@ -1,0 +1,629 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+
+    width: 390px;
+    background-color:#1C1B21 ;
+    height: 100%;
+    overflow-y: auto;
+
+
+    
+    
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+     padding: 13px;
+     
+}
+
+.menuclass{
+    display: none;
+    height: 100%;
+    margin-bottom: 39rem;
+   
+}
+
+#menuCaller{
+    position: absolute;
+    left: 21rem;
+    background-color: #252031;
+    color: white;
+    border-radius: 50px;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+} 
+
+.menu h1 {
+  font-size: 23px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+
+}
+.introduceMe {
+    position: absolute;
+    color: white;
+    bottom: 35rem;
+    font-size: 16px;
+    top: 5rem;
+    left: 17px;
+    gap: 7px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+   font-family: 'Poppins', sans-serif;
+
+}
+.introduceMe h3{
+    font-size: 13px ;
+    color: aqua;
+}
+/*#addButton{
+    position: absolute;
+    bottom: -2rem;
+    margin-left: 19rem;
+    color: white;
+    font-size: 20px;
+    background-color: #58287F;
+    padding: 15px;
+    border-radius: 30px;
+    z-index: 1;
+                                                                        
+}*/
+
+/*icon{
+    margin-top: 38rem;
+}*/
+.onmybutton{
+    display: none;
+    padding: 20px;
+    height: 39.5rem;
+ 
+    
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 20px;
+}
+.fa-xmark{
+    position: absolute;
+   left: 22rem;
+}
+#writeInput{
+    margin-top: 4rem;
+    width: 80%;
+    height: 50px;
+    border-radius: 7px;
+    background-color: #252031;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    caret-color: white;
+    color: white;
+    height: 25px;
+    padding: 20px;
+    font-size: 25px;   
+}
+
+#showText{
+    margin-top: 5rem;
+    width: 95%;
+    list-style: none;
+    padding: 7px;
+    /*position: absolute;
+    top: 3rem;*/
+    
+}
+
+
+
+ #showclassP{
+    color: #383838;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 3rem;
+}
+
+#myBtn{
+    position: absolute;
+    top: 38rem;
+    left: 16rem;
+    color: white;
+    font-size: 20px;
+    background-color: #58287F;
+   padding: 7px;
+   border-radius: 30px;
+   width: 100px;
+   border: none;
+
+}
+.show{
+    display: block;
+}
+.todo-item{
+    margin-bottom: 10px;
+    background-color: #252031;
+    height: 3rem;
+    border-radius: 7px;
+   margin-left: 5px;
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    
+    
+}
+.todo-delete{
+    color: white;
+    background-color: #252031;
+    border: none;
+    margin-left: 18rem;
+    font-size: 10px;
+    cursor: pointer;
+    
+}
+#clickOne {
+    padding: 10px;
+    color: #383838;
+    background-color: #252031;
+    border: none;
+    font-size: 12px;
+    border-radius: 10px;
+    width: 60px;
+}
+#clickTwo{
+    padding: 10px;
+    color: #383838;
+    background-color: #252031;
+    border: none;
+    font-size: 12px;
+    border-radius: 10px;
+    width: 60px;
+}
+#clickOne:hover{
+    color: white;
+
+}
+#clickTwo:hover{
+    color: white;
+    
+}
+.onmybutton h1{
+    font-size: 18px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+.mydays{
+    display: flex;
+    gap: 7px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.pleaseWrite{
+    position: absolute;
+    background-color: #252031;
+    width: 300px;
+    align-items: center;
+    text-align: center;
+    border-radius: 30px;
+    padding: 15px;
+    bottom: 250px;
+    display: none;
+ 
+   
+}
+.pleaseWrite h1{
+    padding: 20px;
+    font-size: 15px;
+
+}
+.active{
+    display: block;
+}
+
+.pleaseWrite button{
+    padding: 10px;
+    width: 200px;
+    background-color: #252031;
+    border: 0.5px solid white ;
+    color: white;
+    border-radius: 20px;
+    
+    
+}
+.onmybutton.show{
+    display: block;
+}
+
+.greeting{
+    color: white;
+    display: block;
+    height: 55px;
+ 
+
+ }
+
+#header{
+    position: absolute;
+    top: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+    left: 7rem;
+   font-family: 'Poppins', sans-serif;
+
+}
+
+
+.menuB h1{
+    
+    color: white;
+    font-size: 20px;
+    top: 5rem;
+    left: 25px;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+  
+
+}
+.menuB{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+#openButton{
+    color: white;
+    font-size: 23px;
+    background-color: #58287F;
+    border-radius: 10px;
+    padding: 16px;                                              
+}
+
+#addButton{
+    color: white;
+    font-size: 23px;
+    background-color: #58287F;
+    border-radius: 10px;
+    padding: 16px;                                                                    
+}
+
+.footerApp{
+    color: blue;
+    width: 100%;
+    background-color: #252031;
+    margin-top:34rem;
+    padding: 5px;
+     color: blue;
+     background-color: #252031;
+     height: 4rem;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;  
+}
+
+.footerApp2{
+    padding: 10px;
+     color: blue;
+     background-color: #252031;
+     height: 4rem;
+     position: fixed;
+     width: 100%;
+     bottom: 0;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+}
+
+.aboutMe{
+    height: 95vh;
+    padding: 30px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1C1B21;
+    display: none;
+}
+
+.aboutnav{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.aboutbody{
+   
+    margin-top: 1rem;
+}
+.aboutbody h1{
+    color: white;
+    margin-bottom: 5px;
+}
+.aboutbody p{
+    color: #58287F;
+    font-size: 20px;
+
+}
+#p2{
+    color: #383838;
+    font-size: 10px;
+}
+.middlebody{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+.middlebody input{
+    width: 200px;
+    padding: 9px;
+    border-radius: 50px;
+    outline: none;
+   caret-color: #252031;
+   margin-bottom: 7px;
+   border: none;
+}
+.middlebody button {
+    width: 50px;
+    border: none;
+    border-radius: 40px;
+    background-color: #1C1B21;
+    color: white;
+    cursor: pointer;
+    margin-top: 5px;
+   
+}
+.hidden{
+    display: block;
+}
+.aboutUs{
+    height: 95vh;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    display: none;
+}
+.showAbout{
+    display: block;
+}
+.aboutUs h2{
+    margin-bottom: 7rem;
+    color: white;
+}
+.aboutUs p{
+    color: white;
+    font-size: 15px;
+    width: 70%;
+   
+}
+.aboutUs h1{
+    color: white;
+}
+.aboutUs input{
+    height: 10rem;
+    width: 12rem;
+    margin-top: 25px;
+    background-color: #1C1B21;
+    outline: none;
+    border: 3px solid purple;
+    border-radius: 25px;
+}
+.aboutUSnav{
+    display: flex;
+    justify-content: space-between;
+}
+.aboutUSnav button{
+    padding: 10px;
+    color: white;
+    background-color: purple;
+    outline: none;
+    border: none;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.navigateMenu{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    
+    height: 11rem;
+    padding: 10px;
+    background-color:#252031 ;
+    position: absolute;
+    width: 96%;
+    top: 30rem;
+    display: none;
+   z-index: 1;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 20px;
+    position: fixed;
+}
+.navigateMenu h2{
+    margin-left: 8rem;
+}
+.myprofile{
+display: flex;
+gap: 10px;
+margin-bottom: 7px;
+}
+.navigateMenu h1{
+    font-size: 10px;
+}
+.contactus{
+display: flex;
+gap: 10px;
+margin-bottom: 7px;
+}
+.emptyall{
+    display: flex;
+    gap: 10px;
+}
+#cancelButton{
+    padding: 8px;
+    width: 350px;
+    color: white;
+    outline: none;
+    background-color: #252031;
+    border-radius: 20px;
+    border: 0.2px solid white;
+    margin-top: 1rem;
+}
+#sameBtn{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    outline: none;
+    border: none;
+    background-color: #252031;
+    gap: 15px;
+
+}
+#sameBtn1{
+    width: 100px;
+    color: white;
+    outline: none;
+    border: none;
+    background-color: #252031;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+
+}
+#sameBtn2{
+    width: 100px;
+    color: white;
+    outline: none;
+    border: none;
+    background-color: #252031;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+
+}
+.showbtn{
+    display: block;
+}
+select{
+    width: 150px;
+    height: 1.5rem;
+    background-color: #1C1B21;
+    border: 1px solid white;
+    color: white;
+    
+}
+.recently{
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    overflow-y: auto;
+    height: 100%;
+    margin-bottom: 39rem;
+    display: none;
+    
+}
+.recentlynav{
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    
+}
+.recentlynav button{
+    padding: 10px;
+    color: white;
+    background-color: purple;
+    outline: none;
+    border: none;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.recently h1{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 1rem;
+    
+    font-size: 20px;
+}
+.recently h2{
+    color: white;
+    font-size: 15px;
+    width: 70%;
+}
+#getTodos{
+    margin-top: 5rem;
+    width: 95%;
+    list-style: none;
+    padding: 7px;
+    color: white;
+ 
+  
+}
+.forRecently{
+    display: block;
+}
+.getToolsdiv{
+   background-color: #1C1B21;
+    width: 90%;
+    height: 4rem;
+    border-radius: 10px;
+}
+.profilepi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    
+}
+.profilepi img{
+    border-radius: 50px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    height: 50px;
+    width: 50px;
+
+}
+#profile_pic_label{
+    color: #0095F6;
+    font-family: var(--myfont);
+    font-size: 10px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    
+}
+#input-file{
+    display: none;
+}
+#profile-piccc{
+    position: absolute;
+    right: 3.7rem;
+    bottom: 39.1rem;
+    border-radius: 50px;
+    object-fit: cover;
+    height: 35px;
+    width: 35px;
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do List</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="greeting">
+        <div class="menuB">
+          <h1>increase productivity</h1>
+        </div>
+        <h2 id="header">
+          Hi! <br />
+          Try adding some todos.
+        </h2>
+      </div>
+
+      <div class="menuclass">
+        <div class="menu">
+          <div class="introduceMe">
+            <h3>Hey,</h3>
+            <h2 id="getName"></h2>
+          </div>
+          <img src="./profile.avif" width="40px" alt="" id="profile-piccc" />
+          <h1>List It</h1>
+
+          <i id="menuCaller" class="fa-solid fa-ellipsis"></i>
+        </div>
+        <ul id="showText">
+          <!--<p id="showInput"></p>-->
+        </ul>
+       
+
+        <div class="footerApp2">
+          
+          <img
+            id="homeButton1"
+            src="./images_home-removebg-preview.png"
+            width="35px"
+            alt=""
+          />
+          <img id="image4" src="./todo-removebg-preview.png" width="30px" alt="">
+
+          <i class="fa-sharp1 fa-solid fa-plus" id="addButton"></i>
+
+          <img id="image5" src="./deleted-removebg-preview.png" width="35px" alt="">
+
+          <img
+            id="image3"
+            src="./png-transparent-female-avatar-girl-face-woman-user-flat-classy-users-icon-removebg-preview.png"
+            width="35px"
+            alt=""
+          />
+        </div>
+      </div>
+     
+
+      <div class="onmybutton">
+        <div class="navbar">
+          <i class="fa-solid fa-arrow-left" id="backButton"></i>
+          <i class="fa-solid fa-xmark" id="closeButton"></i>
+        </div>
+        <input type="text" placeholder="i want to..." id="writeInput" />
+        <p id="showclassP">e.g. Take medication, birthday party</p>
+        <h1>When:</h1>
+        <div class="mydays">
+          <button id="clickOne">Today</button>
+          <button id="clickTwo">Later</button>
+        </div>
+
+        <div class="pleaseWrite">
+          <h1>The titlle for this todo is empty. Please fill in a title.</h1>
+          <button id="pleaseWritebtn">OK</button>
+        </div>
+
+        <button id="myBtn">Add</button>
+      </div>
+
+
+
+
+      <div class="footerApp">
+        <img
+          id="homeButton"
+          src="./images_home-removebg-preview.png"
+          width="35px"
+          alt=""/>
+        <img id="imageFooter" src="./todo-removebg-preview.png" width="30px" alt="">
+        <i class="fa-sharp fa-solid fa-plus" id="openButton"></i>
+        <img id="image6" src="./deleted-removebg-preview.png" width="35px" alt="">
+        <img
+          id="image2"
+          src="./png-transparent-female-avatar-girl-face-woman-user-flat-classy-users-icon-removebg-preview.png"
+          width="35px"
+          alt=""
+        />
+      </div>
+
+      
+      <div class="aboutMe">
+        <div class="aboutnav">
+          <p>Profile Homepage</p>
+          <div class="profilepi">
+            <img src="./profile.avif" width="40px" alt="" id="profile-pic" />            
+            <label id="profile_pic_label" for="input-file">Edit Picture</label>
+            <input type="file" accept="image/jpeg, image/png, image/jpg, image/jpeg" id="input-file">
+
+          </div>
+          
+        </div>
+        <div class="aboutbody">
+          <h1>Hey,</h1>
+          <p>what do we call you ?</p>
+          <p id="p2">eg. Beth, Mo, Malik, Tina</p>
+          <div class="middlebody">
+            <input id="nameField" type="text" placeholder="enter your name" />
+            <p id="genderP">Gender</p>
+            <select>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+            <button id="acceptName">Done</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="aboutUs">
+        <div class="aboutUSnav">
+          <h1>Thank you</h1>
+          <button id="aboutusbtn">Done</button>
+        </div>
+
+        <h2 id="getName2"></h2>
+        <p>
+          List It is one of the easiest todo app and we are glad you are part of
+          the journey. You are the best. <br />
+          <br />
+          However, we are open to cristism cos it helps us stay together and
+          improve. Here is a small space to express yourself and tell us about
+          the features you've been anticipating.
+        </p>
+        <form action="demilade3chub@gmail.com">
+          <input type="text" />
+        </form>
+      </div>
+
+      <div class="navigateMenu">
+        <h2>My List</h2>
+        <div class="navigatecontent">
+          <div class="myprofile">
+            <button id="sameBtn">
+              <img
+                src="./png-transparent-female-avatar-girl-face-woman-user-flat-classy-users-icon-removebg-preview.png"
+                width="20px"
+                alt=""
+              />
+              My Profile
+            </button>
+          </div>
+          <div class="contactus">
+            <button id="sameBtn1">
+              <img
+                id="showAboutUS"
+                src="./images_home-removebg-preview.png"
+                width="20px"
+                alt=""
+              />About Us
+            </button>
+          </div>
+          <div class="emptyall">
+            <button id="sameBtn2">
+              <img
+                id="deleteAll"
+                src="./delete_-removebg-preview.png"
+                width="20px"
+                alt=""
+              />Empty All
+            </button>
+          </div>
+          <button id="cancelButton">Cancel</button>
+        </div>
+      </div>
+      <div class="recently">
+        <div class="recentlynav">
+          <h1>Recently Deleted</h1>
+          <button id="recentButton">Back</button>
+        </div>
+        
+        <h2> Hey, it looks like you mistakenly deleted some
+           of your todos, we kept it safe to recover.</h2>
+           <div class="getToolsdiv">
+            <p id="getTodos">
+           </div>
+        
+
+          </p>
+      </div>
+
+
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
