@@ -144,7 +144,10 @@ const li = document.createElement("li");
    
    li.appendChild(deleteBtn);
    showText.appendChild(li);
+
+  
 }) 
+
 
 showText.addEventListener("click", (event) => {
    if (event.target.classList.contains('todo-delete')) {
@@ -154,6 +157,14 @@ showText.addEventListener("click", (event) => {
  });
  
 
+ //showText.addEventListener("click", (event) => {
+   //if (event.target.classList.contains('todo-delete')) {
+    // const li = event.target.closest('li'); // Get the closest li element
+    // li.remove();
+     //recentlyGetTodos.textContent += li.textContent + ' '; // Append the deleted todo to the text content in the p element
+  // }
+// });
+ 
 
  pleaseWritebtn.addEventListener("click", ()=>{
    pleaseWrite.classList.remove("active");
@@ -234,23 +245,70 @@ imageFive.addEventListener("click", ()=>{
 const recentlyGetTodos = document.querySelector(".recently #getTodos"); // Select the p element in recently class
 
 
-showText.addEventListener("click", (event) => {
-  if (event.target.classList.contains('todo-delete')) {
-    const li = event.target.closest('li'); // Get the closest li element
-    li.remove();
-    recentlyGetTodos.textContent += li.textContent + ' '; // Append the deleted todo to the text content in the p element
-  }
-});
-
 const profilePic = document.querySelector("#profile-pic");
 const inputFile = document.querySelector("#input-file");
 const profilePiccc = document.querySelector("#profile-piccc");
+const storedImageURL = localStorage.getItem("imageURL");
+
+  if (storedImageURL) {
+    profilePic.src = storedImageURL;
+    profilePiccc.src = storedImageURL;
+  }
 
 inputFile.onchange = function(){
    profilePic.src = URL.createObjectURL(inputFile.files[0]);
    profilePiccc.src = URL.createObjectURL(inputFile.files[0]); // Set the source of profilePiccc to the uploaded image
-
+   localStorage.setItem("imageURL", profilePic.src);
+    
 }
 
 
+
+//const showText = document.querySelector("#showText");
+
+// Load the todo items from localStorage when the page loads
+document.addEventListener("DOMContentLoaded", () => {
+  const storedTodos = localStorage.getItem("todos");
+  if (storedTodos) {
+    showText.innerHTML = storedTodos;
+  }
+});
+
+// Function to add a new todo item
+const addTodo = () => {
+  const writeInput = document.querySelector("#writeInput");
+  const todoText = writeInput.value.trim();
+
+  if (todoText !== "") {
+    const li = document.createElement("li");
+    li.classList.add("todo-item");
+    li.textContent = todoText;
+
+    const deleteButton = document.createElement("button");
+    deleteButton.textContent = "Delete";
+    deleteButton.classList.add("todo-delete");
+
+    li.appendChild(deleteButton);
+    showText.appendChild(li);
+
+    // Save the updated todo list to localStorage
+    localStorage.setItem("todos", showText.innerHTML);
+
+    writeInput.value = ""; // Clear the input field
+  }
+};
+
+// Event listener for the add button
+addButton.addEventListener("click", addTodo);
+
+// Event listener for the delete button
+showText.addEventListener("click", (event) => {
+  if (event.target.classList.contains("todo-delete")) {
+    const li = event.target.closest("li"); // Get the closest li element
+    li.remove();
+
+    // Save the updated todo list to localStorage
+    localStorage.setItem("todos", showText.innerHTML);
+  }
+});
 
